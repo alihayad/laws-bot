@@ -13,7 +13,7 @@ bot.on('message', async (ctx) => {
 
     const response = await manager.process("en", ctx.message.text);
 
-    ctx.reply(response.answer).catch(err => bot.telegram.sendMessage(746524823, "Sorry cant answer that rightnow what about an atourney", { parse_mode: 'MarkdownV2' }));
+    ctx.reply(response.answer).catch(err => ctx.reply("Answer Not Found"))
 
 
 
