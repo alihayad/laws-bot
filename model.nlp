@@ -1,0 +1,1294 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ],
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "en"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "locale": "en",
+          "trainByDomain": false,
+          "tag": "domain-manager-en",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "goodby": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "bye,care,take": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "later,see,you": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "bye,for,now": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "go,i,must": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "hello": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "hi": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "howdi": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "greet": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "werww": {
+            "intent": "kids.laws",
+            "domain": "default"
+          },
+          "way": {
+            "intent": "kids.laws",
+            "domain": "default"
+          },
+          "jey": {
+            "intent": "kids.laws",
+            "domain": "default"
+          },
+          "yala": {
+            "intent": "kids.laws",
+            "domain": "default"
+          },
+          "affix,common,door,hous,is,of,poster,purpos,registrar,that,the,to,what,will": {
+            "intent": "section.63",
+            "domain": "default"
+          },
+          "first,in,inform,is,mention,paragraph,public,state,the,what": {
+            "intent": "section.63",
+            "domain": "default"
+          },
+          "are,befor,celebr,document,each,from,futur,inform,marriag,of,or,requir,spous,the,what": {
+            "intent": "section.63",
+            "domain": "default"
+          },
+          "a,futur,hear,is,joint,of,requir,spous,the,when": {
+            "intent": "section.63",
+            "domain": "default"
+          },
+          "ask,civil,doe,each,futur,in,individu,of,registrar,situat,speak,spous,the,to,what,with": {
+            "intent": "section.63",
+            "domain": "default"
+          },
+          "can,civil,deleg,hear,individu,interview,joint,of,offici,or,other,perform,registrar,the,to": {
+            "intent": "section.63",
+            "domain": "default"
+          },
+          "abroad,author,can,consular,diplomat,futur,of,one,or,resid,spous,step,take,the,what,when": {
+            "intent": "section.63",
+            "domain": "default"
+          },
+          "compli,doe,happen,in,not,outlin,paragraph,preced,registrar,requir,the,to,what,who,with": {
+            "intent": "section.63",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "greetings.bye": "default",
+          "greetings.hello": "default",
+          "kids.laws": "default",
+          "section.63": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "goodbye",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye take care",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "see you later",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye for now",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "i must go",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "howdy",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "Greetings",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "werww",
+            "intent": "kids.laws"
+          },
+          {
+            "domain": "default",
+            "utterance": "way",
+            "intent": "kids.laws"
+          },
+          {
+            "domain": "default",
+            "utterance": "jey",
+            "intent": "kids.laws"
+          },
+          {
+            "domain": "default",
+            "utterance": "yala",
+            "intent": "kids.laws"
+          },
+          {
+            "domain": "default",
+            "utterance": "What is the purpose of the poster that the registrar will affix to the door of the common house?",
+            "intent": "section.63"
+          },
+          {
+            "domain": "default",
+            "utterance": "What information is stated in the publication mentioned in the first paragraph?",
+            "intent": "section.63"
+          },
+          {
+            "domain": "default",
+            "utterance": "What information or documents are required from each of the future spouses before the celebration of the marriage?",
+            "intent": "section.63"
+          },
+          {
+            "domain": "default",
+            "utterance": "When is a joint hearing of the future spouses required?",
+            "intent": "section.63"
+          },
+          {
+            "domain": "default",
+            "utterance": "In what situations does the civil registrar ask to speak individually with each of the future spouses?",
+            "intent": "section.63"
+          },
+          {
+            "domain": "default",
+            "utterance": "Can the civil registrar delegate the performance of the joint hearing or individual interviews to other officials?",
+            "intent": "section.63"
+          },
+          {
+            "domain": "default",
+            "utterance": "What steps can the diplomatic or consular authority take when one of the future spouses resides abroad?",
+            "intent": "section.63"
+          },
+          {
+            "domain": "default",
+            "utterance": "What happens to the registrar who does not comply with the requirements outlined in the preceding paragraphs?",
+            "intent": "section.63"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "en",
+              "tag": "nlu-en",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "goodby": 1,
+              "bye": 1,
+              "take": 1,
+              "care": 1,
+              "see": 1,
+              "you": 1,
+              "later": 1,
+              "for": 1,
+              "now": 1,
+              "i": 1,
+              "must": 1,
+              "go": 1,
+              "hello": 1,
+              "hi": 1,
+              "howdi": 1,
+              "greet": 1,
+              "werww": 1,
+              "way": 1,
+              "jey": 1,
+              "yala": 1,
+              "what": 1,
+              "is": 1,
+              "the": 1,
+              "purpos": 1,
+              "of": 1,
+              "poster": 1,
+              "that": 1,
+              "registrar": 1,
+              "will": 1,
+              "affix": 1,
+              "to": 1,
+              "door": 1,
+              "common": 1,
+              "hous": 1,
+              "inform": 1,
+              "state": 1,
+              "in": 1,
+              "public": 1,
+              "mention": 1,
+              "first": 1,
+              "paragraph": 1,
+              "or": 1,
+              "document": 1,
+              "are": 1,
+              "requir": 1,
+              "from": 1,
+              "each": 1,
+              "futur": 1,
+              "spous": 1,
+              "befor": 1,
+              "celebr": 1,
+              "marriag": 1,
+              "when": 1,
+              "a": 1,
+              "joint": 1,
+              "hear": 1,
+              "situat": 1,
+              "doe": 1,
+              "civil": 1,
+              "ask": 1,
+              "speak": 1,
+              "individu": 1,
+              "with": 1,
+              "can": 1,
+              "deleg": 1,
+              "perform": 1,
+              "interview": 1,
+              "other": 1,
+              "offici": 1,
+              "step": 1,
+              "diplomat": 1,
+              "consular": 1,
+              "author": 1,
+              "one": 1,
+              "resid": 1,
+              "abroad": 1,
+              "happen": 1,
+              "who": 1,
+              "not": 1,
+              "compli": 1,
+              "outlin": 1,
+              "preced": 1
+            },
+            "intents": {
+              "greetings.bye": 1,
+              "greetings.hello": 1,
+              "kids.laws": 1,
+              "section.63": 1
+            },
+            "intentFeatures": {
+              "greetings.bye": {
+                "goodby": 1,
+                "bye": 1,
+                "take": 1,
+                "care": 1,
+                "see": 1,
+                "you": 1,
+                "later": 1,
+                "for": 1,
+                "now": 1,
+                "i": 1,
+                "must": 1,
+                "go": 1
+              },
+              "greetings.hello": {
+                "hello": 1,
+                "hi": 1,
+                "howdi": 1,
+                "greet": 1
+              },
+              "kids.laws": {
+                "werww": 1,
+                "way": 1,
+                "jey": 1,
+                "yala": 1
+              },
+              "section.63": {
+                "what": 1,
+                "is": 1,
+                "the": 1,
+                "purpos": 1,
+                "of": 1,
+                "poster": 1,
+                "that": 1,
+                "registrar": 1,
+                "will": 1,
+                "affix": 1,
+                "to": 1,
+                "door": 1,
+                "common": 1,
+                "hous": 1,
+                "inform": 1,
+                "state": 1,
+                "in": 1,
+                "public": 1,
+                "mention": 1,
+                "first": 1,
+                "paragraph": 1,
+                "or": 1,
+                "document": 1,
+                "are": 1,
+                "requir": 1,
+                "from": 1,
+                "each": 1,
+                "futur": 1,
+                "spous": 1,
+                "befor": 1,
+                "celebr": 1,
+                "marriag": 1,
+                "when": 1,
+                "a": 1,
+                "joint": 1,
+                "hear": 1,
+                "situat": 1,
+                "doe": 1,
+                "civil": 1,
+                "ask": 1,
+                "speak": 1,
+                "individu": 1,
+                "with": 1,
+                "can": 1,
+                "deleg": 1,
+                "perform": 1,
+                "interview": 1,
+                "other": 1,
+                "offici": 1,
+                "step": 1,
+                "diplomat": 1,
+                "consular": 1,
+                "author": 1,
+                "take": 1,
+                "one": 1,
+                "resid": 1,
+                "abroad": 1,
+                "happen": 1,
+                "who": 1,
+                "not": 1,
+                "compli": 1,
+                "outlin": 1,
+                "preced": 1
+              }
+            },
+            "featuresToIntent": {
+              "goodby": [
+                "greetings.bye"
+              ],
+              "bye": [
+                "greetings.bye"
+              ],
+              "take": [
+                "greetings.bye",
+                "section.63"
+              ],
+              "care": [
+                "greetings.bye"
+              ],
+              "see": [
+                "greetings.bye"
+              ],
+              "you": [
+                "greetings.bye"
+              ],
+              "later": [
+                "greetings.bye"
+              ],
+              "for": [
+                "greetings.bye"
+              ],
+              "now": [
+                "greetings.bye"
+              ],
+              "i": [
+                "greetings.bye"
+              ],
+              "must": [
+                "greetings.bye"
+              ],
+              "go": [
+                "greetings.bye"
+              ],
+              "hello": [
+                "greetings.hello"
+              ],
+              "hi": [
+                "greetings.hello"
+              ],
+              "howdi": [
+                "greetings.hello"
+              ],
+              "greet": [
+                "greetings.hello"
+              ],
+              "werww": [
+                "kids.laws"
+              ],
+              "way": [
+                "kids.laws"
+              ],
+              "jey": [
+                "kids.laws"
+              ],
+              "yala": [
+                "kids.laws"
+              ],
+              "what": [
+                "section.63"
+              ],
+              "is": [
+                "section.63"
+              ],
+              "the": [
+                "section.63"
+              ],
+              "purpos": [
+                "section.63"
+              ],
+              "of": [
+                "section.63"
+              ],
+              "poster": [
+                "section.63"
+              ],
+              "that": [
+                "section.63"
+              ],
+              "registrar": [
+                "section.63"
+              ],
+              "will": [
+                "section.63"
+              ],
+              "affix": [
+                "section.63"
+              ],
+              "to": [
+                "section.63"
+              ],
+              "door": [
+                "section.63"
+              ],
+              "common": [
+                "section.63"
+              ],
+              "hous": [
+                "section.63"
+              ],
+              "inform": [
+                "section.63"
+              ],
+              "state": [
+                "section.63"
+              ],
+              "in": [
+                "section.63"
+              ],
+              "public": [
+                "section.63"
+              ],
+              "mention": [
+                "section.63"
+              ],
+              "first": [
+                "section.63"
+              ],
+              "paragraph": [
+                "section.63"
+              ],
+              "or": [
+                "section.63"
+              ],
+              "document": [
+                "section.63"
+              ],
+              "are": [
+                "section.63"
+              ],
+              "requir": [
+                "section.63"
+              ],
+              "from": [
+                "section.63"
+              ],
+              "each": [
+                "section.63"
+              ],
+              "futur": [
+                "section.63"
+              ],
+              "spous": [
+                "section.63"
+              ],
+              "befor": [
+                "section.63"
+              ],
+              "celebr": [
+                "section.63"
+              ],
+              "marriag": [
+                "section.63"
+              ],
+              "when": [
+                "section.63"
+              ],
+              "a": [
+                "section.63"
+              ],
+              "joint": [
+                "section.63"
+              ],
+              "hear": [
+                "section.63"
+              ],
+              "situat": [
+                "section.63"
+              ],
+              "doe": [
+                "section.63"
+              ],
+              "civil": [
+                "section.63"
+              ],
+              "ask": [
+                "section.63"
+              ],
+              "speak": [
+                "section.63"
+              ],
+              "individu": [
+                "section.63"
+              ],
+              "with": [
+                "section.63"
+              ],
+              "can": [
+                "section.63"
+              ],
+              "deleg": [
+                "section.63"
+              ],
+              "perform": [
+                "section.63"
+              ],
+              "interview": [
+                "section.63"
+              ],
+              "other": [
+                "section.63"
+              ],
+              "offici": [
+                "section.63"
+              ],
+              "step": [
+                "section.63"
+              ],
+              "diplomat": [
+                "section.63"
+              ],
+              "consular": [
+                "section.63"
+              ],
+              "author": [
+                "section.63"
+              ],
+              "one": [
+                "section.63"
+              ],
+              "resid": [
+                "section.63"
+              ],
+              "abroad": [
+                "section.63"
+              ],
+              "happen": [
+                "section.63"
+              ],
+              "who": [
+                "section.63"
+              ],
+              "not": [
+                "section.63"
+              ],
+              "compli": [
+                "section.63"
+              ],
+              "outlin": [
+                "section.63"
+              ],
+              "preced": [
+                "section.63"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "en",
+                "tag": "nlu-en",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "goodby",
+                "bye",
+                "take",
+                "care",
+                "see",
+                "you",
+                "later",
+                "for",
+                "now",
+                "i",
+                "must",
+                "go",
+                "hello",
+                "hi",
+                "howdi",
+                "greet",
+                "werww",
+                "way",
+                "jey",
+                "yala",
+                "what",
+                "is",
+                "the",
+                "purpos",
+                "of",
+                "poster",
+                "that",
+                "registrar",
+                "will",
+                "affix",
+                "to",
+                "door",
+                "common",
+                "hous",
+                "inform",
+                "state",
+                "in",
+                "public",
+                "mention",
+                "first",
+                "paragraph",
+                "or",
+                "document",
+                "are",
+                "requir",
+                "from",
+                "each",
+                "futur",
+                "spous",
+                "befor",
+                "celebr",
+                "marriag",
+                "when",
+                "a",
+                "joint",
+                "hear",
+                "situat",
+                "doe",
+                "civil",
+                "ask",
+                "speak",
+                "individu",
+                "with",
+                "can",
+                "deleg",
+                "perform",
+                "interview",
+                "other",
+                "offici",
+                "step",
+                "diplomat",
+                "consular",
+                "author",
+                "one",
+                "resid",
+                "abroad",
+                "happen",
+                "who",
+                "not",
+                "compli",
+                "outlin",
+                "preced"
+              ],
+              "intents": [
+                "greetings.bye",
+                "greetings.hello",
+                "kids.laws",
+                "section.63"
+              ],
+              "perceptrons": [
+                [
+                  11.516155242919922,
+                  5.968756675720215,
+                  2.787710666656494,
+                  3.0500733852386475,
+                  3.9351518154144287,
+                  3.9351518154144287,
+                  3.9351518154144287,
+                  2.91849422454834,
+                  2.91849422454834,
+                  3.935051918029785,
+                  3.935051918029785,
+                  3.935051918029785,
+                  -2.4655418395996094,
+                  -2.4584410190582275,
+                  -2.4508450031280518,
+                  -2.442761182785034,
+                  -2.434197187423706,
+                  -2.4251623153686523,
+                  -2.415663957595825,
+                  -2.405712366104126,
+                  -0.7158833146095276,
+                  -0.4228915274143219,
+                  -0.9024105072021484,
+                  -0.11268867552280426,
+                  -0.6611922383308411,
+                  -0.11268867552280426,
+                  -0.11268867552280426,
+                  -0.2653473913669586,
+                  -0.11268867552280426,
+                  -0.11268867552280426,
+                  -0.2653473913669586,
+                  -0.11268867552280426,
+                  -0.11268867552280426,
+                  -0.11268867552280426,
+                  -0.2366996556520462,
+                  -0.15300244092941284,
+                  -0.21843178570270538,
+                  -0.15300244092941284,
+                  -0.15300244092941284,
+                  -0.15300244092941284,
+                  -0.2009592205286026,
+                  -0.38048428297042847,
+                  -0.043822869658470154,
+                  -0.043822869658470154,
+                  -0.2019250988960266,
+                  -0.043822869658470154,
+                  -0.07384825497865677,
+                  -0.4227531850337982,
+                  -0.4227531850337982,
+                  -0.043822869658470154,
+                  -0.043822869658470154,
+                  -0.043822869658470154,
+                  -0.31897786259651184,
+                  -0.06896871328353882,
+                  -0.1451767385005951,
+                  -0.1451767385005951,
+                  -0.008113947696983814,
+                  -0.03440750762820244,
+                  -0.06336405873298645,
+                  -0.008113947696983814,
+                  -0.008113947696983814,
+                  -0.06336405873298645,
+                  -0.03440750762820244,
+                  -0.29352325201034546,
+                  -0.049164652824401855,
+                  -0.049164652824401855,
+                  -0.049164652824401855,
+                  -0.049164652824401855,
+                  -0.049164652824401855,
+                  -0.2150295376777649,
+                  -0.2150295376777649,
+                  -0.2150295376777649,
+                  -0.2150295376777649,
+                  -0.2150295376777649,
+                  -0.2150295376777649,
+                  -0.2150295376777649,
+                  -0.020208097994327545,
+                  -0.020208097994327545,
+                  -0.020208097994327545,
+                  -0.020208097994327545,
+                  -0.020208097994327545,
+                  -0.020208097994327545,
+                  2.465326785049477
+                ],
+                [
+                  -4.416704177856445,
+                  -2.2901864051818848,
+                  -1.1623847484588623,
+                  -1.139677882194519,
+                  -1.529702067375183,
+                  -1.529702067375183,
+                  -1.529702067375183,
+                  -1.14994215965271,
+                  -1.14994215965271,
+                  -1.5294129848480225,
+                  -1.5294129848480225,
+                  -1.5294129848480225,
+                  9.527710914611816,
+                  9.52259635925293,
+                  9.486410140991211,
+                  9.448436737060547,
+                  -4.527822971343994,
+                  -4.5061116218566895,
+                  -4.483524322509766,
+                  -4.460089206695557,
+                  -0.6929718852043152,
+                  -0.6511280536651611,
+                  -1.0346165895462036,
+                  -0.11691164970397949,
+                  -0.6611881256103516,
+                  -0.11691164970397949,
+                  -0.11691164970397949,
+                  -0.42202743887901306,
+                  -0.11691164970397949,
+                  -0.11691164970397949,
+                  -0.42202743887901306,
+                  -0.11691164970397949,
+                  -0.11691164970397949,
+                  -0.11691164970397949,
+                  -0.3811335265636444,
+                  -0.27083802223205566,
+                  -0.3883819282054901,
+                  -0.27083802223205566,
+                  -0.27083802223205566,
+                  -0.27083802223205566,
+                  -0.37338927388191223,
+                  -0.265916645526886,
+                  -0.07539132237434387,
+                  -0.07539132237434387,
+                  -0.42148661613464355,
+                  -0.07539132237434387,
+                  -0.09675759077072144,
+                  -0.35663697123527527,
+                  -0.35663697123527527,
+                  -0.07539132237434387,
+                  -0.07539132237434387,
+                  -0.07539132237434387,
+                  -0.23134881258010864,
+                  -0.20864199101924896,
+                  -0.3416054844856262,
+                  -0.3416054844856262,
+                  -0.007496324833482504,
+                  -0.11749394983053207,
+                  -0.14790688455104828,
+                  -0.007496324833482504,
+                  -0.007496324833482504,
+                  -0.14790688455104828,
+                  -0.11749394983053207,
+                  -0.15562109649181366,
+                  -0.1329142153263092,
+                  -0.1329142153263092,
+                  -0.1329142153263092,
+                  -0.1329142153263092,
+                  -0.1329142153263092,
+                  -0.015505160205066204,
+                  -0.015505160205066204,
+                  -0.015505160205066204,
+                  -0.015505160205066204,
+                  -0.015505160205066204,
+                  -0.015505160205066204,
+                  -0.015505160205066204,
+                  -0.10250131785869598,
+                  -0.10250131785869598,
+                  -0.10250131785869598,
+                  -0.10250131785869598,
+                  -0.10250131785869598,
+                  -0.10250131785869598,
+                  4.604748199576929
+                ],
+                [
+                  -4.503775119781494,
+                  -2.352025270462036,
+                  -1.2009966373443604,
+                  -1.1749976873397827,
+                  -1.5639715194702148,
+                  -1.5639715194702148,
+                  -1.5639715194702148,
+                  -1.16521418094635,
+                  -1.16521418094635,
+                  -1.562187910079956,
+                  -1.562187910079956,
+                  -1.562187910079956,
+                  -4.46890926361084,
+                  -4.443507671356201,
+                  -4.417263507843018,
+                  -4.390209197998047,
+                  9.540654182434082,
+                  9.535327911376953,
+                  9.498931884765625,
+                  9.460750579833984,
+                  -0.7567476034164429,
+                  -0.6821555495262146,
+                  -1.0940561294555664,
+                  -0.13821977376937866,
+                  -0.7116085290908813,
+                  -0.13821977376937866,
+                  -0.13821977376937866,
+                  -0.45592689514160156,
+                  -0.13821977376937866,
+                  -0.13821977376937866,
+                  -0.45592689514160156,
+                  -0.13821977376937866,
+                  -0.13821977376937866,
+                  -0.13821977376937866,
+                  -0.4007875323295593,
+                  -0.2694481313228607,
+                  -0.3979666531085968,
+                  -0.2694481313228607,
+                  -0.2694481313228607,
+                  -0.2694481313228607,
+                  -0.38016462326049805,
+                  -0.28739914298057556,
+                  -0.08912866562604904,
+                  -0.08912866562604904,
+                  -0.43369004130363464,
+                  -0.08912866562604904,
+                  -0.11449107527732849,
+                  -0.3741132616996765,
+                  -0.3741132616996765,
+                  -0.08912866562604904,
+                  -0.08912866562604904,
+                  -0.08912866562604904,
+                  -0.22611883282661438,
+                  -0.2001459002494812,
+                  -0.3351137042045593,
+                  -0.3351137042045593,
+                  -0.008898365311324596,
+                  -0.11510933190584183,
+                  -0.14693669974803925,
+                  -0.008898365311324596,
+                  -0.008898365311324596,
+                  -0.14693669974803925,
+                  -0.11510933190584183,
+                  -0.15735112130641937,
+                  -0.1292790025472641,
+                  -0.1292790025472641,
+                  -0.1292790025472641,
+                  -0.1292790025472641,
+                  -0.1292790025472641,
+                  -0.017872313037514687,
+                  -0.017872313037514687,
+                  -0.017872313037514687,
+                  -0.017872313037514687,
+                  -0.017872313037514687,
+                  -0.017872313037514687,
+                  -0.017872313037514687,
+                  -0.09738212078809738,
+                  -0.09738212078809738,
+                  -0.09738212078809738,
+                  -0.09738212078809738,
+                  -0.09738212078809738,
+                  -0.09738212078809738,
+                  4.61187565971514
+                ],
+                [
+                  -0.25059473514556885,
+                  -0.3482450544834137,
+                  0.0858229547739029,
+                  -0.17549146711826324,
+                  -0.17052458226680756,
+                  -0.17052458226680756,
+                  -0.17052458226680756,
+                  -0.11963658779859543,
+                  -0.11963658779859543,
+                  -0.15978382527828217,
+                  -0.15978382527828217,
+                  -0.15978382527828217,
+                  -0.22375476360321045,
+                  -0.2204916626214981,
+                  -0.21620167791843414,
+                  -0.2117321640253067,
+                  -0.2073853611946106,
+                  -0.2040269374847412,
+                  -0.20200783014297485,
+                  -0.20148764550685883,
+                  2.0657877922058105,
+                  1.8678950071334839,
+                  3.1462721824645996,
+                  0.35897648334503174,
+                  1.8939664363861084,
+                  0.35897648334503174,
+                  0.35897648334503174,
+                  1.1191742420196533,
+                  0.35897648334503174,
+                  0.35897648334503174,
+                  1.1191742420196533,
+                  0.35897648334503174,
+                  0.35897648334503174,
+                  0.35897648334503174,
+                  1.0904399156570435,
+                  0.868185818195343,
+                  1.1886323690414429,
+                  0.868185818195343,
+                  0.868185818195343,
+                  0.868185818195343,
+                  1.2523070573806763,
+                  0.9579315781593323,
+                  0.2222539186477661,
+                  0.2222539186477661,
+                  1.2471082210540771,
+                  0.2222539186477661,
+                  0.15857890248298645,
+                  1.0952376127243042,
+                  1.0952376127243042,
+                  0.2222539186477661,
+                  0.2222539186477661,
+                  0.2222539186477661,
+                  0.9366583824157715,
+                  0.64073246717453,
+                  1.0804848670959473,
+                  1.0804848670959473,
+                  -0.06367529183626175,
+                  0.3204459547996521,
+                  0.3760766386985779,
+                  -0.06367529183626175,
+                  -0.06367529183626175,
+                  0.3760766386985779,
+                  0.3204459547996521,
+                  0.7356780171394348,
+                  0.4397517442703247,
+                  0.4397517442703247,
+                  0.4397517442703247,
+                  0.4397517442703247,
+                  0.4397517442703247,
+                  0.29592591524124146,
+                  0.29592591524124146,
+                  0.29592591524124146,
+                  0.29592591524124146,
+                  0.29592591524124146,
+                  0.29592591524124146,
+                  0.29592591524124146,
+                  0.3841211795806885,
+                  0.3841211795806885,
+                  0.3841211795806885,
+                  0.3841211795806885,
+                  0.3841211795806885,
+                  0.3841211795806885,
+                  0.2016390284246324
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "en",
+        "goodbye"
+      ],
+      [
+        "en",
+        "bye take care"
+      ],
+      [
+        "en",
+        "see you later"
+      ],
+      [
+        "en",
+        "bye for now"
+      ],
+      [
+        "en",
+        "i must go"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "howdy"
+      ],
+      [
+        "en",
+        "Greetings"
+      ],
+      [
+        "en",
+        "werww"
+      ],
+      [
+        "en",
+        "way"
+      ],
+      [
+        "en",
+        "jey"
+      ],
+      [
+        "en",
+        "yala"
+      ],
+      [
+        "en",
+        "What is the purpose of the poster that the registrar will affix to the door of the common house?"
+      ],
+      [
+        "en",
+        "What information is stated in the publication mentioned in the first paragraph?"
+      ],
+      [
+        "en",
+        "What information or documents are required from each of the future spouses before the celebration of the marriage?"
+      ],
+      [
+        "en",
+        "When is a joint hearing of the future spouses required?"
+      ],
+      [
+        "en",
+        "In what situations does the civil registrar ask to speak individually with each of the future spouses?"
+      ],
+      [
+        "en",
+        "Can the civil registrar delegate the performance of the joint hearing or individual interviews to other officials?"
+      ],
+      [
+        "en",
+        "What steps can the diplomatic or consular authority take when one of the future spouses resides abroad?"
+      ],
+      [
+        "en",
+        "What happens to the registrar who does not comply with the requirements outlined in the preceding paragraphs?"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "en": {
+        "greetings.bye": [
+          {
+            "answer": "see you soon!"
+          },
+          {
+            "answer": "Till next time"
+          },
+          {
+            "answer": "bye bye"
+          },
+          {
+            "answer": "have a great day"
+          }
+        ],
+        "greetings.hello": [
+          {
+            "answer": "Hey there!"
+          },
+          {
+            "answer": "Hello"
+          },
+          {
+            "answer": "Hi"
+          },
+          {
+            "answer": "Greetings"
+          }
+        ],
+        "kids.laws": [
+          {
+            "answer": "23"
+          },
+          {
+            "answer": "12"
+          },
+          {
+            "answer": "1"
+          },
+          {
+            "answer": "1111"
+          }
+        ],
+        "section.63": [
+          {
+            "answer": "Before the wedding ceremony, the registrar will post a notice on the door of the community building. This notice will list the first and last names, occupations, addresses, and places of residence of the engaged couple, as well as the location of the wedding."
+          },
+          {
+            "answer": "The registrar may assign other officials from the civil status department to conduct the joint meeting or individual interviews. If one of the engaged couple lives abroad, the registrar may request assistance from the local diplomatic or consular authority."
+          },
+          {
+            "answer": "The notice required in the first sentence, or the wedding ceremony if an exemption from notice has been granted according to Article 169, is subject to The submission of specific documents and information from each of the engaged couple, including ID, proof of residency, and details of witnesses. A joint meeting between the engaged couple, unless impossible or deemed unnecessary based on the provided documents.An individual meeting with each of the engaged couple by the registrar if there is reason to suspect that the marriage may be annulled."
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}
